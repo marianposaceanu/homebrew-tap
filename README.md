@@ -12,3 +12,14 @@ brew install mextdisplay
 ```
 
 Run `mextdisplay` to open the terminal UI.
+
+## rz
+
+Install the native Ghostty workspace manager for macOS:
+
+```sh
+brew tap marianposaceanu/tap
+brew install rz
+```
+
+Run `rz --help` to see the snapshot, restore, watcher, and cleanup commands.
