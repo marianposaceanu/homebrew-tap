@@ -1,8 +1,8 @@
 class Rz < Formula
   desc "Save and restore native Ghostty workspaces on macOS"
   homepage "https://github.com/marianposaceanu/rz"
-  url "https://github.com/marianposaceanu/rz/archive/refs/tags/v0.2.1.tar.gz"
-  sha256 "c0c0c9838c059e8a5115fcc95f57fd3194767e6e7625ba0e4be6211f2a7305d0"
+  url "https://github.com/marianposaceanu/rz/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "04a85ac70d449083a6b9ff954f1086b96c5c3bb058a1b0c20d22522a9398f63a"
   license "MIT"
 
   depends_on "rust" => :build
@@ -14,7 +14,7 @@ class Rz < Formula
   end
 
   test do
-    assert_match "rz 0.2.1", shell_output("#{bin}/rz --version")
+    assert_match "rz 0.3.0", shell_output("#{bin}/rz --version")
 
     output = shell_output("#{bin}/rz --help")
     assert_match "rz --save NAME", output
